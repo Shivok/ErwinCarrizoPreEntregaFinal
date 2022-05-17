@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6e6711620e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/img/logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-angles-right" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aboutUs.html">Acerca de Nosotros</a></li>
+                    <li><a href="branches.html">Sucursales</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-angles-left" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Sucursales</h1>
+
+    </section>
+
+<!------About Us Content----->
+<section class="course">
+    <h1>Talleres</h1>
+    <p>TEXTO TEXTO TEXTO</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Basico</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermedio</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+        <div class="course-col">
+            <h3>Avanzado</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+    </div>
+</section>
+
+<section class="branches">
+    <h1>Nuestras sucursales</h1>
+    <p>Encontra nuestras sucursales en varios puntos del pais</p>
+    <div class="row">
+        <div class="branches-col">
+            <img src="./assets/img/branchBaires.jpg">
+            <h3>Chile</h3>
+            <p>Nuestra sucursal en Santiago de Chile se encuentra ubicada en calle San Martin 120</p>
+        </div>
+        <div class="branches-col">
+            <img src="./assets/img/branchChile.jpg">
+            <h3>Argentina</h3>
+            <p>Nuestra sucursal en Buenos Aires se encuentra ubicada en calle Sucre 1489</p>
+        </div>
+        <div class="branches-col">
+            <img src="./assets/img/branchBrasil.jpg">
+            <h3>Brasil</h3>
+            <p>Nuestra sucursal en Rio se encuentra ubicada en calle Callao 2222</p>
+        </div>
+    </div>
+</section>
+
+<!-----Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Conoce mas sobre nuestras ofertas y oportunidades</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-----JavaScript para Menu------->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu (){
+        navLinks.style.right ="0"
+    }
+    function hideMenu (){
+        navLinks.style.right ="-200px"
+    }
+</script>
+    
+</body>
+</html> 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6e6711620e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/img/logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-angles-right" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aboutUs.html">Acerca de Nosotros</a></li>
+                    <li><a href="branches.html">Sucursales</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-angles-left" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Concato</h1>
+
+    </section>
+
+<!------Contac----->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30340.307268412518!2d-58.44053351758903!3d-34.640057229297824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1652675367465!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="class row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Casa Central, Sucre 1489</h5>
+                    <p>Buenos Aires, Argentina</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+549 011 555-999</h5>
+                    <p>Lunes a Viernes, 9am a 4pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>infogaleriapacifico@gmail.com</h5>
+                    <p>Envia tu consulta</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Ingresa tu Nombre" required>
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <input type="text" placeholder="Escribi tu consulta" required>
+                <textarea rows="8" placeholder="Mensaje" required></textarea>
+                <button type="enviar" class="hero-btn red-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-----Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Conoce mas sobre nuestras ofertas y oportunidades</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-----JavaScript para Menu------->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu (){
+        navLinks.style.right ="0"
+    }
+    function hideMenu (){
+        navLinks.style.right ="-200px"
+    }
+</script>
+    
+</body>
+</html> 

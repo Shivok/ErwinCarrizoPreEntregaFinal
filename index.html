@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6e6711620e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./assets/img/logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-angles-right" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aboutUs.html">Acerca de Nosotros</a></li>
+                    <li><a href="branches.html">Sucursales</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-angles-left" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Galeria Pacifico</h1>
+    <p>Nos dedicamos a que tus sueños se hagan realidad!</p>
+    <a href="gallery.html" class="hero-btn">Visita Nuetra Galeria</a>
+</div>
+    </section>
+
+<!------Sucursales------>
+
+<section class="course">
+    <h1>Talleres</h1>
+    <p>Encontranos en tres paises</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Chile</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermedio</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+        <div class="course-col">
+            <h3>Avanzado</h3>
+            <p>TEXTO TEXTO TEXTO</p>
+        </div>
+    </div>
+</section>
+
+<!------Medios------>
+
+<section class="mediums">
+    <h1>Nuestors Medios</h1>
+    <p>TEXTO TEXTO TEXTO</p>
+    <div class="row">
+        <div class="mediums-col">
+            <img src="./assets/img/watercolor.jpg">
+            <div class="layer">
+                <h3>Acuarela</h3>
+            </div>
+        </div>
+        <div class="mediums-col">
+            <img src="./assets/img/oilPainting.jpg">
+            <div class="layer">
+                <h3>Oleo</h3>
+            </div>
+        </div>
+        <div class="mediums-col">
+            <img src="./assets/img/pencilDrawn.jpg">
+            <div class="layer">
+                <h3>Lapiz</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------Testimoniales------>
+
+<section class="testimonials">
+    <h1>Que dicen nuestros clientes</h1>
+    <p>TEXTO TEXTO TEXTO</p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="./assets/img/keanuReeves.jpg">
+            <div>
+                <p>TEXTO TEXTO</p>
+                <h3>Keanu <br> Reeves</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="./assets/img/penelopeCruz.jpg">
+            <div>
+                <p>TEXTO TEXTO</p>
+                <h3>Penelope <br> Cruz</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="./assets/img/lanzaniImg.jpg">
+            <div>
+                <p>TEXTO TEXTO</p>
+                <h3>Peter <br> Lanzani</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-----Footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Conoce mas sobre nuestras ofertas y oportunidades</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-----JavaScript para Menu------->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu (){
+        navLinks.style.right ="0"
+    }
+    function hideMenu (){
+        navLinks.style.right ="-200px"
+    }
+</script>
+    
+</body>
+</html> 
